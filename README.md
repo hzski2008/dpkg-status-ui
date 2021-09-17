@@ -1,7 +1,7 @@
 # dpkg-status-ui
 
-Shows key information about `/var/lib/dpkg/status` file found in Debian and
-Ubuntu systems via HTML interface.
+A React+Express application showing packag information extracted from `/var/lib/dpkg/status` file found in Debian and
+Ubuntu systems via web ui.
 
 ## Getting started
 
