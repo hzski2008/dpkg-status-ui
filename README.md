@@ -3,6 +3,9 @@
 A React+Express application showing packag information extracted from `/var/lib/dpkg/status` file found in Debian and
 Ubuntu systems via web ui.
 
+## Requirements
+![Alt text](./8va0x.jpg?raw=true "Title")
+
 ## Getting started
 
 Clone the project:
