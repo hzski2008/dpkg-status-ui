@@ -8,7 +8,7 @@ import {
   Redirect,
 } from "react-router-dom";
 import PackageInfo from "./components/PackageInfo";
-import LoadingSpinner from "./LoadingSpinner";
+import LoadingSpinner from "./components/LoadingSpinner";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
