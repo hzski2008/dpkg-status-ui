@@ -4,7 +4,7 @@ A React+Express application showing packag information extracted from `/var/lib/
 Ubuntu systems via web ui.
 
 ## Requirements
-![Alt text](./8va0x.jpg?raw=true "Title")
+![Alt text](./req.PNG?raw=true "Title")
 
 ## Getting started
 
