@@ -3,10 +3,10 @@
 A React+Express application showing packag information extracted from `/var/lib/dpkg/status` file found in Debian and
 Ubuntu systems via web ui.
 
-![Alt text](./demo.PNG?raw=true "Demo")
+<img src="demo.PNG" width="300" height="300"/>
 
 ## Requirements
-![Alt text](./req.PNG?raw=true "Requirements")
+<img src="req.PNG" width="300" height="300"/>
 
 ## Getting started
 
