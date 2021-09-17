@@ -1,0 +1,29 @@
+.container {
+  height : 100%;
+  display: flex;
+}
+
+.sidebar {
+  vertical-align: top;
+  /* height     : 100%; */
+  width         : 20%;
+  background    : lightblue;
+  overflow      : auto;
+  padding       : 0px 10px 0px 10px;
+  white-space   : nowrap;
+  height        : 100vh;
+}
+
+.sidebar-list {
+  list-style-type: disc;
+  padding        : 10px 10px 10px 20px;
+}
+
+.content {
+  flex          : 1;
+  padding       : 0px 10px 0px 10px;
+  vertical-align: top;
+  height        : 100%;
+  width         : 82%;
+  overflow      : auto;
+}

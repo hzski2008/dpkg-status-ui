@@ -1,0 +1,15 @@
+.package-info {
+  position: fixed;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-weight: bold;
+}
+
+.description {
+  white-space: pre-wrap;
+}
