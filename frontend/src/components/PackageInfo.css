@@ -1,5 +1,9 @@
 .package-info {
   position: fixed;
+  top     : 0;
+  bottom  : 0;
+  overflow: auto;
+  /*width : 100%;*/
 }
 
 .section {
@@ -11,5 +15,6 @@
 }
 
 .description {
-  white-space: pre-wrap;
+  /*white-space: pre-wrap;*/
+  padding-right: 20px;
 }
