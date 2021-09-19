@@ -1,10 +1,15 @@
 {
-  "name": "server",
+  "name": "dpkg-status-ui",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=14.16.0"
+  },
   "scripts": {
-    "dev": "nodemon index.js",
+    "build": "cd frontend && npm install && npm run build",
+    "dev": "nodemon backend/index.js",
+    "start": "node backend/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

@@ -16,14 +16,8 @@ function App() {
   const [linkList, setLinkList] = useState(null);
   const [packageNames, setPackageNames] = useState([]);
 
-  let API_ENDPOINT;
-  if (process.env.NODE_ENV === "production") {
-    API_ENDPOINT = "/api/packages";
-  } else {
-    API_ENDPOINT = "http://localhost:4000/api/packages"; // could be replaced using .env file
-  }
-
   useEffect(() => {
+    const API_ENDPOINT = "/api/packages";
     const handleErrors = (resp) => {
       if (!resp.ok) {
         throw new Error(resp.status);
