@@ -8,8 +8,9 @@
   },
   "scripts": {
     "build": "cd frontend && npm install && npm run build",
-    "dev": "nodemon backend/index.js",
-    "start": "node backend/index.js",
+    "start:dev-server": "nodemon backend/index.js",
+    "start:dev-ui": "cd frontend && npm run start",
+    "start:prod": "node backend/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
