@@ -28,19 +28,19 @@ cd frontend && npm install
 
 Run the server
 ```
-npm run start:dev:server
+npm run start:dev-server
 ```
 
 Run the UI
 ```
-cd frontend && npm run start
+npm run start:ui
 ```
 
 You can now acess the UI on <http://localhost:3000>, which connects to server on <http://localhost:3001>
 
 #### In production, the client and server runs on the same domain
 ```
-npm run start
+npm run build && npm run start:prod
 ```
 
 You can now access the whole app on <http://localhost:3001>
