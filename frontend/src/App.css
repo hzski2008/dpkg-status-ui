@@ -27,3 +27,12 @@
   /*width         : 80%;*/
   overflow        : auto;
 }
+
+.sort-asc,
+.sort-desc {
+  outline: none;
+  padding: 2px;
+  margin: 0 4px 4px 0;
+  border-radius: 4px;
+  width: 90px;
+}

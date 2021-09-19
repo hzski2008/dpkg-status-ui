@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -39,8 +39,8 @@ function App() {
         .then((pkgs) => {
           setPackages(pkgs);
           setIsLoading(false);
-          setLinkList(getLinkList(pkgs));
-          setPackageNames(getNames(pkgs));
+          //setLinkList(getLinkList(pkgs));
+          //setPackageNames(getNames(pkgs));
         })
         .catch((error) => {
           throw error;
@@ -66,6 +66,39 @@ function App() {
     });
   };
 
+  const handlePackagesChange = useCallback(() => {
+    setLinkList(getLinkList(packages));
+    setPackageNames(getNames(packages));
+  }, [packages]);
+
+  useEffect(() => {
+    handlePackagesChange();
+  }, [handlePackagesChange]);
+
+  const ascCompare = (first, second) => {
+    const a = first.name;
+    const b = second.name;
+
+    if (a > b) {
+      return 1;
+    } else if (a < b) {
+      return -1;
+    } else {
+      return 0;
+    }
+  };
+
+  const sortAsc = () => {
+    setPackages(prevState => {
+       return [...prevState].sort((a, b) => ascCompare(a, b));
+    });
+  };
+
+  /* --- Descending order sorting --- */
+  const sortDesc = () => {
+    setPackages(prevState => [...prevState].sort((a, b) => ascCompare(b, a)));
+  };
+
   // Package component
   const Packages = () => {
     return (
@@ -73,6 +106,12 @@ function App() {
         <div className="container">
           <div className="sidebar">
             <h3>Packages</h3>
+            <button className='sort-asc' onClick={sortAsc}>
+        Sort A-Z
+      </button>
+      <button className='sort-desc' onClick={sortDesc}>
+        Sort Z-A
+      </button>
             <ul className="sidebar-list"> {linkList}</ul>
           </div>
           <div className="content">
