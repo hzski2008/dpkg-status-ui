@@ -39,8 +39,6 @@ function App() {
         .then((pkgs) => {
           setPackages(pkgs);
           setIsLoading(false);
-          //setLinkList(getLinkList(pkgs));
-          //setPackageNames(getNames(pkgs));
         })
         .catch((error) => {
           throw error;
