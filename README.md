@@ -33,10 +33,10 @@ npm run start:dev-server
 
 Run the UI
 ```
-npm run start:ui
+npm run start:dev-ui
 ```
 
-You can now acess the UI on <http://localhost:3000>, which connects to server on <http://localhost:3001>
+You can now acess the UI on <http://localhost:3000>, which connects to backend server on <http://localhost:3001>
 
 #### In production, the client and server runs on the same domain
 ```
