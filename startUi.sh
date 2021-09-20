@@ -1,3 +1,3 @@
 #! /usr/bin/bash
 
-npm --prefix ./frontend run start
+npm run start:dev-ui

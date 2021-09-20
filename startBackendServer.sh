@@ -1,3 +1,3 @@
 #! /usr/bin/bash
 
-npm --prefix ./backend run dev
+npm run start:dev-server
